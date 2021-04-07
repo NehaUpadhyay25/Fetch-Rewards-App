@@ -1,0 +1,43 @@
+span {
+    color: red;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    margin-left: 10px;
+    text-wrap: normal;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    padding: 0px 15px;
+    margin: 0 auto;
+    grid-row-gap: 20px;
+    list-style: none;
+}
+
+textarea {
+    margin-top: 10px;
+    border: none;
+    resize: none;    
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
